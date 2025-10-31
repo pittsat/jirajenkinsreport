@@ -22,4 +22,7 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+// Listen on all interfaces so other devices can access it
+app.Urls.Add("http://0.0.0.0:5000");
+
 app.Run();
