@@ -1,43 +1,78 @@
-html {
-  font-size: 14px;
+/* --- Base styles --- */
+html, body {
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
-    background-color: #FE5C00; /* OSU Orange */
-    color: #000000; /* black text for contrast */
+    background-color: #FE5C00; /* OSU Orange background */
+    color: #000000; /* black text */
     font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-/* --- OSU Orange Navbar with Black Buttons --- */
+/* --- Navbar --- */
 .navbar-osu {
-    background-color: #FE5C00 !important; /* OSU Orange */
-    border-bottom: 3px solid #e65500;
+    background-color: #ffffff !important; /* white navbar */
+    border-bottom: 3px solid #d94f00; /* OSU orange accent */
+    min-height: 120px; /* double height */
+    display: flex;
+    align-items: center; /* vertically center content */
 }
 
-/* Brand text (still white for contrast) */
-.navbar-osu .navbar-brand {
-    color: #000000 !important;
-    font-weight: 700;
+    /* Brand / app name */
+    .navbar-osu .navbar-brand {
+        color: #000000 !important; /* black text */
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+    /* Nav links */
+    .navbar-osu .nav-link {
+        color: #000000 !important; /* black text */
+        font-weight: 600;
+        font-size: 1.25rem; /* bigger text */
+        margin: 0 0.5rem;
+        padding: 0.4rem 0.75rem;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease;
+    }
+
+        /* Hover / focus: text turns OSU orange, no background change */
+        .navbar-osu .nav-link:hover,
+        .navbar-osu .nav-link:focus {
+            color: #FE5C00 !important;
+            background-color: transparent !important;
+        }
+
+    /* Navbar toggler (mobile menu) */
+    .navbar-osu .navbar-toggler {
+        border-color: rgba(0,0,0,0.2);
+    }
+
+    .navbar-osu .navbar-toggler-icon {
+        filter: none;
+    }
+
+/* --- Main content stretches to fill page --- */
+main, .container {
+    flex: 1 0 auto;
 }
 
-/* Hover / focus states */
-.navbar-osu .nav-link:hover,
-.navbar-osu .nav-link:focus {
-    background-color: #000000; /* black background */
-    color: #ffffff !important; /* white text */
-}
-
-/* Navbar toggler (mobile menu button) */
-.navbar-osu .navbar-toggler {
-    border-color: rgba(255,255,255,0.4);
-}
-
-.navbar-osu .navbar-toggler-icon {
-    filter: brightness(0) invert(1);
+/* --- Footer --- */
+.site-footer {
+    background-color: #ffffff !important; /* white footer */
+    color: #000000;
+    border-top: 3px solid #d94f00; /* OSU orange accent */
+    text-align: center;
+    padding: 1rem 0;
+    flex-shrink: 0;
 }
