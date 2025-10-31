@@ -8,15 +8,36 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    background-color: #FE5C00; /* OSU Orange */
+    color: #000000; /* black text for contrast */
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* --- OSU Orange Navbar with Black Buttons --- */
+.navbar-osu {
+    background-color: #FF6600 !important; /* OSU Orange */
+    border-bottom: 3px solid #e65500;
+}
+
+/* Brand text (still white for contrast) */
+.navbar-osu .navbar-brand {
+    color: #000000 !important;
+    font-weight: 700;
+}
+
+/* Hover / focus states */
+.navbar-osu .nav-link:hover,
+.navbar-osu .nav-link:focus {
+    background-color: #000000; /* black background */
+    color: #ffffff !important; /* white text */
+}
+
+/* Navbar toggler (mobile menu button) */
+.navbar-osu .navbar-toggler {
+    border-color: rgba(255,255,255,0.4);
+}
+
+.navbar-osu .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
 }
