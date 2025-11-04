@@ -67,16 +67,6 @@ main, .container {
     flex: 1 0 auto;
 }
 
-/* --- Footer --- */
-.site-footer {
-    background-color: #ffffff !important; /* white footer */
-    color: #000000;
-    border-top: 3px solid #d94f00; /* OSU orange accent */
-    text-align: center;
-    padding: 1rem 0;
-    flex-shrink: 0;
-}
-
 .chatimage {
     height: auto;
     width: 40em;
