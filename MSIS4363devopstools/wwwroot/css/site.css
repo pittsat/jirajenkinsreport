@@ -76,3 +76,17 @@ main, .container {
     padding: 1rem 0;
     flex-shrink: 0;
 }
+
+.chatimage {
+    height: auto;
+    width: 40em;
+}
+
+
+.simplebox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
