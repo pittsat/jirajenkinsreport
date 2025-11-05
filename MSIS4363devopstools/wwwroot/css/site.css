@@ -5,6 +5,21 @@ html, body {
     margin: 0;
 }
 
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.frank-ruhl-libre {
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
@@ -12,7 +27,7 @@ html, body {
 }
 
 body {
-    background-color: #FE5C00; /* OSU Orange background */
+    background-color: #ffffff; /* OSU white background */
     color: #000000; /* black text */
     font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
     display: flex;
@@ -21,7 +36,7 @@ body {
 
 /* --- Navbar --- */
 .navbar-osu {
-    background-color: #ffffff !important; /* white navbar */
+    background-color: #Fe5c00 !important; /* white navbar */
     border-bottom: 3px solid #d94f00; /* OSU orange accent */
     min-height: 120px; /* double height */
     display: flex;
