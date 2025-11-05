@@ -64,7 +64,7 @@ body {
         
         .navbar-osu .nav-link:hover,
         .navbar-osu .nav-link:focus {
-            color: #FE5C00 !important;
+            color: #FFFFFF !important;
             background-color: transparent !important;
         }
 
@@ -75,6 +75,11 @@ body {
 
     .navbar-osu .navbar-toggler-icon {
         filter: none;
+    }
+
+    .navbar-osu .nav-link.active {
+        text-decoration: underline;
+        text-underline-offset: 4px;
     }
 
 /* --- Main content stretches to fill page --- */
@@ -103,12 +108,15 @@ main, .container {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    
 }
 
 .missionstatement {
     text-align: center;
     padding: 2rem;
     background-color: #dddddd;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 h1 {
@@ -119,14 +127,61 @@ h1 {
     color: black;
 }
 
+/* Index page styling */
+.indexpage p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
 
+.indexpage h2 {
+    font-weight: 700;
+}
 
+.indexpage .orangebox {
+    background-color: #FE5C00;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
 
+    .indexpage .orangebox h2 {
+        color: #ffffff;
+    }
 
+    .indexpage .orangebox p {
+        color: #ffffff;
+    }
 
+/* Jira page styling */
+.jirapage p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
 
+.jirapage h2 {
+    font-weight: 700;
+}
 
+.jirapage .orangebox {
+    background-color: #FE5C00;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
 
+    .jirapage .orangebox h2 {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .jirapage .orangebox p {
+        color: #ffffff;
+        text-align: left;
+    }
+
+.jirapage .ratings p {
+    text-align: center;
+}
 
 
 /* Test page styling */
@@ -153,3 +208,34 @@ h1 {
 .testpage .orangebox p {
     color: #ffffff;
 }
+
+/* Jenkins page styling */
+.jenkinspage p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.jenkinspage h2 {
+    font-weight: 700;
+}
+
+.jenkinspage .orangebox {
+    background-color: #FE5C00;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+    .jenkinspage .orangebox h2 {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .jenkinspage .orangebox p {
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .jenkinspage .ratings p {
+        text-align: center;
+    }
