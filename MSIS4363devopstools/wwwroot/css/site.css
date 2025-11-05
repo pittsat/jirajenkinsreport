@@ -130,26 +130,26 @@ h1 {
 
 
 /* Test page styling */
-p {
+.testpage p {
     font-size: 1.2rem;
     line-height: 1.6;
 }
 
-h2 {
+.testpage h2 {
     font-weight: 700;
 }
 
-.orangebox {
+.testpage .orangebox {
     background-color: #FE5C00;
     color: #ffffff;
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
 
-.orangebox h2 {
+.testpage .orangebox h2 {
     color: #ffffff;
-}
+    }
 
-.orangebox p {
+.testpage .orangebox p {
     color: #ffffff;
 }
