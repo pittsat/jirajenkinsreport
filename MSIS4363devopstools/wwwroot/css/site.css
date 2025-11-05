@@ -52,16 +52,16 @@ body {
 
     /* Nav links */
     .navbar-osu .nav-link {
-        color: #000000 !important; /* black text */
+        color: #000000 !important;
         font-weight: 600;
-        font-size: 1.25rem; /* bigger text */
+        font-size: 1.25rem;
         margin: 0 0.5rem;
         padding: 0.4rem 0.75rem;
         border-radius: 0.25rem;
         transition: color 0.15s ease;
     }
 
-        /* Hover / focus: text turns OSU orange, no background change */
+        
         .navbar-osu .nav-link:hover,
         .navbar-osu .nav-link:focus {
             color: #FE5C00 !important;
@@ -84,9 +84,9 @@ main, .container {
 
 /* --- Footer --- */
 .site-footer {
-    background-color: #ffffff !important; /* white footer */
+    background-color: #ffffff !important;
     color: #000000;
-    border-top: 3px solid #d94f00; /* OSU orange accent */
+    border-top: 3px solid #d94f00;
     text-align: center;
     padding: 1rem 0;
     flex-shrink: 0;
@@ -117,4 +117,39 @@ h1 {
     font-weight: 400;
     font-style: normal;
     color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Test page styling */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.orangebox {
+    background-color: #FE5C00;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.orangebox h2 {
+    color: #ffffff;
+}
+
+.orangebox p {
+    color: #ffffff;
 }
